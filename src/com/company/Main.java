@@ -52,10 +52,12 @@ public class Main {
             Registry registry;
 
             void addPerson(Person p) {
+                if (p == null) return;
                 registry.add(p);
             }
 
             Record retrieveRecordsFor(Person p) {
+                if (p == null) return null;
                 Record record;
                 record = registry.retrieveRecords(p);
                 return record;
