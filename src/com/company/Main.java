@@ -11,6 +11,7 @@ public class Main {
 	// write your code here
     }
 
+    // Convert Element to Collection
     void start(List<Car> cars) {
         for (Car car : cars) {
             car.start();
@@ -45,4 +46,21 @@ public class Main {
             if (num % i == 0) return false;
         return true;
     }
+
+    void addNullCheckForParameter() {
+        class Inner {
+            Registry registry;
+
+            void addPerson(Person p) {
+                registry.add(p);
+            }
+
+            Record retrieveRecordsFor(Person p) {
+                Record record;
+                record = registry.retrieveRecords(p);
+                return record;
+            }
+        }
+    }
+
 }
