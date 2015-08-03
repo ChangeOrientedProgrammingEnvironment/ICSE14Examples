@@ -104,8 +104,8 @@ public class Main {
     // 8.
     void copyFieldInitializer() {
         class Cars {
-            List<Car> compacts;
-            List<Car> sedans;
+            List<Car> compacts = new ArrayList<>();
+            List<Car> sedans = new ArrayList<>();
         }
     }
 }
