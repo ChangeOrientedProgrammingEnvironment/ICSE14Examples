@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -11,6 +12,14 @@ public class Main {
     void start(List<Car> cars) {
         for (Car car : cars) {
             car.start();
+        }
+    }
+
+    void addLoopCollector() {
+        ArrayList<Task> tasks = new ArrayList<>();
+
+        for (Task t : tasks) {
+            t.execute();
         }
     }
 }
