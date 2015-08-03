@@ -85,4 +85,15 @@ public class Main {
             }
         }
     }
+
+    // 7.
+    void changeFieldToThreadLocal() {
+        class Inner {
+            Cache c = new Cache();
+
+            void putInfo(String key, String value) {
+                c.add(key, value);
+            }
+        }
+    }
 }
