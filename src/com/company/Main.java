@@ -89,10 +89,14 @@ public class Main {
     // 7.
     void changeFieldToThreadLocal() {
         class Inner {
-            Cache c = new Cache();
+            ThreadLocal<Cache> c = new ThreadLocal<Cache>() {
+                protected Cache initialValue() {
+                    return new Cache();
+                }
+            };
 
             void putInfo(String key, String value) {
-                c.add(key, value);
+                c.get().add(key, value);
             }
         }
     }
