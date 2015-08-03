@@ -11,13 +11,14 @@ public class Main {
 	// write your code here
     }
 
-    // Convert Element to Collection
+    // 1. Convert Element to Collection
     void start(List<Car> cars) {
         for (Car car : cars) {
             car.start();
         }
     }
 
+    // 2.
     void addLoopCollector() {
         ArrayList<Task> tasks = new ArrayList<>();
 
@@ -28,6 +29,7 @@ public class Main {
         }
     }
 
+    // 3.
     void wrapCodeWithTimer() {
         long start = System.currentTimeMillis();
         for (int i = 0; i < 1000; i++) {
@@ -47,6 +49,7 @@ public class Main {
         return true;
     }
 
+    // 4.
     void addNullCheckForParameter() {
         class Inner {
             Registry registry;
@@ -65,4 +68,6 @@ public class Main {
         }
     }
 
+    // 5. Add a New Enum Element
+    // Cannot create an enum inside of a method
 }
