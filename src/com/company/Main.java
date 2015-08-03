@@ -113,9 +113,11 @@ public class Main {
     void createAndInitializeNewField() {
         class Automobile {
             private List<Valve> valves;
+            private List<Wheel> wheels;
 
             public Automobile() {
                 valves = new ArrayList<Valve>();
+                wheels = new ArrayList<Wheel>();
             }
         }
     }
