@@ -28,11 +28,14 @@ public class Main {
     }
 
     void wrapCodeWithTimer() {
+        long start = System.currentTimeMillis();
         for (int i = 0; i < 1000; i++) {
             if (isPrime(i)) {
                 System.out.println(i);
             }
         }
+        long end = System.currentTimeMillis();
+        long totalTime = end - start;
     }
 
     private boolean isPrime(int num) {
