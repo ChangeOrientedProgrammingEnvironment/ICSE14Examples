@@ -124,9 +124,11 @@ public class Main {
 
     // 10.
     void moveInterfaceImplementationToInnerClass() {
-        class FolderNode implements SelectionListener {
-            public void selected() {
-                
+        class FolderNode {
+            class SelectionBehaviour implements SelectionListener {
+                public void selected() {
+
+                }
             }
         }
     }
