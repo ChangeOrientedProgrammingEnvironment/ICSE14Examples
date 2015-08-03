@@ -108,4 +108,15 @@ public class Main {
             List<Car> sedans = new ArrayList<>();
         }
     }
+
+    // 9.
+    void createAndInitializeNewField() {
+        class Automobile {
+            private List<Valve> valves;
+
+            public Automobile() {
+                valves = new ArrayList<Valve>();
+            }
+        }
+    }
 }
