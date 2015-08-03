@@ -121,4 +121,13 @@ public class Main {
             }
         }
     }
+
+    // 10.
+    void moveInterfaceImplementationToInnerClass() {
+        class FolderNode implements SelectionListener {
+            public void selected() {
+                
+            }
+        }
+    }
 }
