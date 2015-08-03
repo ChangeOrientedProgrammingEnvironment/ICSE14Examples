@@ -8,6 +8,6 @@ public class Task {
 
     }
     public TaskResult getResult() {
-
+        return new TaskResult();
     }
 }
