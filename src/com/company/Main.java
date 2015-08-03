@@ -70,4 +70,19 @@ public class Main {
 
     // 5. Add a New Enum Element
     // Cannot create an enum inside of a method
+
+    // 6.
+    void changeAndPropagateFieldType() {
+        class Inner {
+            int mileage;
+
+            int getCurrentMileage() {
+                return mileage;
+            }
+
+            void updateMileage(int newMiles) {
+                mileage += newMiles;
+            }
+        }
+    }
 }
