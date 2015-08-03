@@ -100,4 +100,12 @@ public class Main {
             }
         }
     }
+
+    // 8.
+    void copyFieldInitializer() {
+        class Cars {
+            List<Car> compacts;
+            List<Car> sedans;
+        }
+    }
 }
