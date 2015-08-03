@@ -7,7 +7,7 @@ public class Task {
     public void execute() {
 
     }
-    public void getResult() {
+    public TaskResult getResult() {
 
     }
 }
