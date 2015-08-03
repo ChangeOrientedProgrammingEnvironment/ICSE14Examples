@@ -74,13 +74,13 @@ public class Main {
     // 6.
     void changeAndPropagateFieldType() {
         class Inner {
-            int mileage;
+            long mileage;
 
-            int getCurrentMileage() {
+            long getCurrentMileage() {
                 return mileage;
             }
 
-            void updateMileage(int newMiles) {
+            void updateMileage(long newMiles) {
                 mileage += newMiles;
             }
         }
